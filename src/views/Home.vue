@@ -7,7 +7,7 @@
         v-for="i in 2"
         :key="i"
         class="col-lg-4 text-center"
-        :image="'https://complianz.io/wp-content/uploads/2019/03/placeholder-300x202.jpg'"
+        title="Mohammad"
       ></product-card>
     </div>
 
@@ -15,9 +15,10 @@
 </template>
 
 <script>
+import { onMounted } from '@vue/runtime-core';
 import ShopNavbarVue from "../components/Home/ShopNavbar.vue";
 import ProductCardVue from "../components/Product/ProductCard.vue";
-
+import {useStore} from 'vuex'
 
 export default {
   name: "Home",
@@ -25,6 +26,16 @@ export default {
     "shop-nav": ShopNavbarVue,
     "product-card": ProductCardVue,
   },
+  setup(props){
+
+    const store = useStore()
+
+    onMounted(()=>{
+      store.dispatch('splitProducts')  
+
+      console.log(store.getters);
+    })
+  }
 };
 </script>
 

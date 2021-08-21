@@ -29,7 +29,7 @@ export default {};
 }
 
 .add-icon {
-  
+  border-right: 1px solid #05668D;
   padding-right: 10px;
   padding-top: 5px;
   font-size: 20px;

@@ -10,7 +10,7 @@
     <add-to-cart class="add-cart"></add-to-cart>
 
     <div class="product-title">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente totam
+      {{title}}
     </div>
   </div>
 </template>
@@ -21,7 +21,7 @@ export default {
   components: {
     "add-to-cart": AddToCartButtonVue,
   },
-  props: ["image"],
+  props: ["image" , "title"],
   setup(props){
       console.log(props);
   }
@@ -33,6 +33,7 @@ export default {
 
 .product-container{
     transition:  1s;
+    padding-bottom: 10px;
 }
 
 .product-container:hover{
