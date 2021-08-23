@@ -21,8 +21,8 @@ export default createStore({
     } ,
     actions : {} ,
     getters : {
-        getCategoriesSize(state , getters){
-            return state.categories.length
-        }
+        // getCategoriesSize(state , getters){
+        //     return state.categories.length
+        // }
     }
 })

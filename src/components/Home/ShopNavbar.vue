@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light has-shadow sticky-top">
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top">
     <button
       class="navbar-toggler"
       type="button"
@@ -70,10 +70,7 @@ export default {
 </script>
 
 <style scoped>
-.has-shadow {
-  box-shadow: 5px 10px 6px #02c39a;
-  background: white;
-}
+
 
 .dropdown:hover>.dropdown-menu {
   display: block;
